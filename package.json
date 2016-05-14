@@ -1,0 +1,32 @@
+{
+  "name": "learn-react",
+  "version": "1.0.0",
+  "description": "learn react step by step!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:demo-1": "node_modules/.bin/browserify demo-1/main.js -o demo-1/bundle.js -t [babelify]",
+    "build:demo-2": "node_modules/.bin/browserify demo-2/main.js -o demo-2/bundle.js -t [babelify]",
+    "build:demo-3": "node_modules/.bin/browserify demo-3/main.js -o demo-3/bundle.js -t [babelify]"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrdulin/learn-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrdulin/learn-react/issues"
+  },
+  "homepage": "https://github.com/mrdulin/learn-react#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1"
+  }
+}
