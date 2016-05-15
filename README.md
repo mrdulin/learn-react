@@ -11,8 +11,8 @@ __说明：__
 * 每个`demo`需要执行`npm run build:demo-x`(x是对应的数字)进行构建输出`bundle.js`
 * 构建完成后，运行每个`demo`中的`index.html`
 
-|名称|描述|
-|----|----|
+| 名称 | 描述 |
+|---|---|
 |demo-1|`React.createClass`|
 |demo-2|`React.Children`相关方法|
 |demo-3|`React.createElement`|
