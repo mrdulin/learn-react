@@ -13,6 +13,13 @@ __说明：__
 
 |名称|描述|
 |----|----|
-|demo-1|React.createClass|
-|demo-2|React.Children相关方法|
-|demo-3|React.createElement|
+|demo-1|`React.createClass`|
+|demo-2|`React.Children`相关方法|
+|demo-3|`React.createElement`|
+|demo-4|`getDefaultProps`,`getInitialState`|
+|demo-5|`mixins`|
+|demo-6|组件初始化渲染生命周期内`getDefaultProps`, `getInitialState`, `componentWillMount`, `render`, `componentDidMount`执行顺序|
+|demo-7|组件`state`改变生命周期内`shouldComponentUpdate`, `componentWillUpdate`, `render`, `componentDidUpdate`执行顺序|
+|demo-8|组件嵌套|
+|demo-9|组件命名空间|
+|demo-10|组件扩展属性`{...something}`, `for`, `if-else`, 三目运算符等在`JSX`中的使用|
