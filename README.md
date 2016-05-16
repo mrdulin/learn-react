@@ -8,7 +8,7 @@ __说明：__
 * `.babelrc`文件内容很重要，直接关系到`browserify -t [babelify]...`命令的成功与否
 * 查看`package.json`的`dependency`和`scripts`获取`react`等版本信息，及其他信息
 * `.gitignore`中忽略了`bundle.js`（每个demo都有这个文件，然而这个文件构建后包含`react`等库，导致文件很大，所以忽略提交上传该文件）
-* 每个`demo`需要执行`npm run build:demo-x`(x是对应的数字)进行构建输出`bundle.js`
+* 每个`demo`需要执行`npm run build:demo-x`(x是对应的数字)进行构建输出`bundle.js`(mini-app查看使用`npm run watch:mini-app`构建)
 * 构建完成后，运行每个`demo`中的`index.html`
 
 | 名称 | 描述 |
@@ -23,3 +23,4 @@ __说明：__
 |demo-8|组件嵌套|
 |demo-9|组件命名空间|
 |demo-10|组件扩展属性`{...something}`, `for`, `if-else`, 三目运算符等在`JSX`中的使用|
+|mini-app|一个完整的迷你应用|

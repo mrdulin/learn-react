@@ -14,7 +14,8 @@
     "build:demo-7": "node_modules/.bin/browserify demo-7/main.js -o demo-7/bundle.js -t [babelify]",
     "build:demo-8": "node_modules/.bin/browserify demo-8/main.jsx -o demo-8/bundle.js -t [babelify]",
     "build:demo-9": "node_modules/.bin/browserify demo-9/main.jsx -o demo-9/bundle.js -t [babelify]",
-    "build:demo-10": "node_modules/.bin/browserify demo-10/main.jsx -o demo-10/bundle.js -t [babelify]"
+    "build:demo-10": "node_modules/.bin/browserify demo-10/main.jsx -o demo-10/bundle.js -t [babelify]",
+    "watch:mini-app": "node_modules/.bin/watchify mini-app/App.jsx -o mini-app/bundle.js -t [babelify] -v"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
     "react-dom": "^15.0.2"
   },
   "devDependencies": {
-    "browserify": "^13.0.1"
+    "browserify": "^13.0.1",
+    "watchify": "^3.7.0"
   }
 }
