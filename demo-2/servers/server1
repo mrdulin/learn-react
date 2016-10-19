@@ -1,0 +1,13 @@
+server {
+    listen       80;
+    server_name  www.domain1.com;
+
+    access_log  logs/$server_name.access.log  combined;
+
+    location / {
+        #root末尾的"/"加不加无所谓
+        root  /Users/dulin/workspace/nginx-winter/demo-2/html/www.domain1.com;
+        index  index.html index.htm;
+    }
+}
+

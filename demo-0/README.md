@@ -21,7 +21,7 @@ nginx: configuration file /usr/local/etc/nginx/nginx.conf test is successful
 
 *   `nginx`默认的`web`文档根目录`www`路径
 
-`Mac OS X`下，通过`brew`安装的`nginx`, `www`目录的路径为`/usr/local/var/www`。`nginx.conf`中的`root html`代表`root /usr/local/var/www/html`。
+`Mac OS X`下，通过`brew`安装的`nginx`, `www`目录的路径为`/usr/local/var/www`。`nginx.conf`中的`root html`代表`root /usr/local/var/www`。
 
 *   `nginx`启动，停止，重启命令
 

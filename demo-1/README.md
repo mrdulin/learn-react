@@ -1,0 +1,47 @@
+# 配置域名虚拟服务器
+
+*   测试`nginx.conf`
+
+如果报`nginx: [emerg] bind() to 0.0.0.0:80 failed (13: Permission denied) `，请加`sudo`
+
+```bash
+➜  ~ sudo nginx -t -c ~/workspace/nginx-winter/demo-1/nginx.conf                                                                                                                                                                                                                 
+Password:                                                                                                                                                                                                                                                                        
+nginx: the configuration file /Users/dulin/workspace/nginx-winter/demo-1/nginx.conf syntax is ok                                                                                                                                                                                 
+nginx: configuration file /Users/dulin/workspace/nginx-winter/demo-1/nginx.conf test is successful
+```
+
+*   在`/etc/host`文件中添加规则：
+
+```bash
+sudo vim /etc/host
+```
+
+```txt
+127.0.0.1 www.domain1.com
+127.0.0.1 www.domain2.com
+```
+
+*   启动`nginx`服务器
+
+指定`nginx.conf`配置文件。
+
+```bash
+➜  ~ sudo nginx -c /Users/dulin/workspace/nginx-winter/demo-1/nginx.conf                                                                                                                                                                                                         
+Password:                                                                                                                                                                                                                                                                        
+➜  nginx-winter git:(master) ✗ ps aux | egrep '(PID|nginx)'                                                                                                                                                                                                    
+USER              PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND                                                                                                                                                                          
+dulin           68872   0.0  0.4  3198456  30300   ??  S    12:30下午   0:00.79 /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper /Applications/Visual Studio Code.app/Contents/Resources/app/out/bootstrap /
+usr/local/bin/git /Users/dulin/workspace/nginx-winter utf8 /Applications/Visual Studio Code.app/Contents/MacOS/Electron 2.8.3                                                                                                                                  
+dulin           70326   0.0  0.0  2423372    216 s000  R+    1:16下午   0:00.00 egrep (PID|nginx)                                                                                                                                                              
+nobody          70145   0.0  0.0  2466704   1336   ??  S     1:11下午   0:00.00 nginx: worker process                                                                                                                                                          
+root            70144   0.0  0.0  2449296    420   ??  Ss    1:11下午   0:00.00 nginx: master process nginx -c /Users/dulin/workspace/nginx-winter/demo-1/nginx.conf 
+```
+
+*   浏览器中访问`www.domain1.com`和`www.domain2.com`
+
+*   停止`nginx`服务器
+
+```bash
+sudo nginx -s stop
+```
