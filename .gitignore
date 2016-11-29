@@ -49,4 +49,5 @@ crashlytics-build.properties
 
 
 node_modules/
-bundle.js
+.DS_*
+.vscode
