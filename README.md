@@ -14,3 +14,8 @@ code /usr/local/etc/nginx/nginx.conf
 ```
 
 `nginx-toturial.org`是假域名
+
+## references
+
+- https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/
+- http://nginx.org/en/docs/http/ngx_http_map_module.html
