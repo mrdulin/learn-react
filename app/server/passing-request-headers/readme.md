@@ -60,10 +60,3 @@
 `host`是`$proxy_host`，即`proxy_pass`中指定的服务器的 IP(域名) 和端口, `$proxy_host` - name and port of a proxied server as specified in the `proxy_pass` directive;
 
 `Connection`是`close` - https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Connection#%E6%8C%87%E4%BB%A4
-
-`hosts`如下：
-
-```txt
-127.0.0.1 nginx-toturial.org
-127.0.0.1 www.nginx-toturial.org
-```
